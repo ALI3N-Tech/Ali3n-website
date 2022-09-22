@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    
+}
+
+.navbar-logo> img{
+    width: 100px;
+    height: 50px;
+    /* position: absolute; */
+    /* top: 0; */
+}
+
+.navbar{
+    background: whitesmoke;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 1.2rem; */
+    /* padding: 0; */
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    box-shadow:  1px 5px 1px #dcdcdc,
+             -5px -5px 4px #e4e4e4;
+
+    
+}
+
+.navbar-container{
+    display: flex;
+    margin: auto;
+    width: min(100%-2rem);
+    margin-top: 20px;
+    
+}
+
+.menu-icon{
+    display: none;
+}
+
+.nav-menu{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 45px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    /* padding-right: 3rem; */
+    margin: 0 auto;
+    font-size: 1.2rem;
+    
+    
+}
+
+.nav-links {
+    color: rgb(13, 2, 2);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: inline;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.nav-item{
+    display: flex;
+}
+
+.nav-links:hover{
+    color: #072a6c;
+}
+
+.nav-signup{
+    display: none;
+}
+
+@media (max-width:960px){
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 60vh;
+        position: absolute;
+        top: 80px;
+        right: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        padding-bottom: 30px;
+        z-index: 999;
+      }
+      
+
+    .nav-menu.active {
+          background: #242222;
+          right: 1px;
+          opacity: 1;
+          transition: all 0.5s ease;
+          z-index: 999;
+     }
+
+     .nav-signup{
+        display: block;
+    }
+
+    
+
+    .nav-links {
+            text-align: center;
+            padding: 2rem;
+            width: 100%;
+            display: table;
+            color: white;
+           
+           
+    }
+
+    .nav-links:hover{
+        color: var(--outline);
+        background-color: white;
+    }
+
+    .menu-icon{
+        display: block;
+        position: absolute;
+        right: 40px;
+        top: 8px;
+        font-size: 30px;
+        color: black;
+        cursor: pointer;
+        transform: translate(-100%, 60%);
+    }
+
+    .div-1 img{
+        position: absolute;
+        left: 40px;
+        top: 20px;
+    }
+
+
+  
+}
+
+
+

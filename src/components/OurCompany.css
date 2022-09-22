@@ -1,0 +1,113 @@
+.our-company{
+    padding-top: 10%;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 10%;
+    
+}
+
+.ourCompanyTitles{
+    text-align: center;
+}
+
+.ourCompanyTitles>h2{
+    padding-top: 20px;
+    font-size: 37px;
+    font-family: 'Lato', sans-serif;
+}
+
+.ourCompanyTitles>span{
+    font-size: 23px;
+    color: #072a6c;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.companies{
+    display: flex;
+    text-align: center;
+    padding-top: 50px;
+    justify-content: space-around;
+    /* width: 100%; */
+    gap: 30px;
+    
+   
+    
+}
+
+
+.eachCompany{
+    border-radius: 19px;
+    background: linear-gradient(145deg, #f3f3f3, #fffefe);
+    box-shadow:  10px 10px 20px #b1b1b1, -10px -10px 20px #ffffff;
+    /* font-size: 50px; */
+    padding: 60px 15px;
+    width: 28%;
+    /* transition: ; */
+    cursor: pointer;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    /* z-index: 999; */
+
+}
+
+.eachCompany p{
+    padding-top: 15px;
+    font-size: 23px;
+    z-index: 10;
+    font-family: 'Source Sans Pro', sans-serif;
+    /* position: absolute; */
+    bottom: 100px;
+    top: 10px;
+    position: relative;
+
+}
+
+.eachCompany h3{
+    font-size: 32px;
+    z-index: 10;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+}
+
+.eachCompany:hover::after{
+    top: 0;
+    left: 0;
+    /* right: 100%; */
+    bottom: 0;
+    color: #f3f3f3;
+    border-radius: 19px;
+    z-index: 0;
+}
+
+@media (max-width:950px){
+    .companies{
+        display: inline-block;
+    }
+    .eachCompany{
+        width: 100%;
+        margin-top: 40px;
+    }
+}
+/* .eachCompany:hover{
+    color: #f3f3f3;
+    z-index: 10;
+} */
+
+
+
+.eachCompany::after{
+    content: "";
+    position: absolute;
+    background-color: #97bbff;
+    height: 100%;
+    width: 100%;
+    top: 100%;
+    left: -100%;
+    border-radius: 1000px;
+    z-index: -1;
+    transition: all  ease;
+    transition-delay: 0;
+    transition-duration: 0.5s;
+    box-sizing: border-box;
+}

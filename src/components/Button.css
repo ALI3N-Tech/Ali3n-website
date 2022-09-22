@@ -1,0 +1,65 @@
+:root{
+    --primary:rgb(255, 255, 255);
+    --secondary: #808080;
+    --outline: #072a6c;
+    --text-color:#242424;
+}
+
+.btn{
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.btn--primary{
+    background-color: transparent;
+    color: var(--primary);
+    border-radius: 18px;
+    border: 1px solid var(--primary);
+    font-size: 17px;
+    transition: all 0.5s ease-out;
+    font-weight: 1000;
+    
+    
+}
+.btn--secondary{
+    background-color: var(--outline);
+    color: var(--primary);
+    transition: all 0.3s ease-out;
+    border-radius: 18px;
+    padding: 10px 18px;
+    font-size: 17px;
+    /* animation-delay: 2s; */
+    
+}
+.btn--normal{
+    padding: 8px 15px;
+    /* font-size: 10px; */
+}
+.btn--large{
+    padding: 14px 34px;
+    /* color: var(--primary); */
+    font-size: 20px;
+
+}
+.btn--primary:hover{
+    background-color: var(--outline);
+    color: var(--primary);
+}
+.btn--secondary:hover{
+    background-color: #072a6c;
+    transition: all 0.3s ease-out;
+}
+
+.btn--float{
+    animation: anime 1.5s infinite ease-in-out alternate;
+    animation-delay: 2s;
+}
+
+@keyframes anime{
+    100%{
+        transform: translateY(12px);
+    }
+}
