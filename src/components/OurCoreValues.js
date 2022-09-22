@@ -17,7 +17,6 @@ function OurCoreValues() {
     gsap.fromTo(
       progressBars.querySelectorAll(".progessing-bar"),
       {
-        opacity: 1,
         scaleX: 0,
       },
       {
@@ -29,11 +28,13 @@ function OurCoreValues() {
           //   100 * progressBars.querySelectorAll(".progessing-bar").style.scaleX;
 
           const percentage = document.querySelectorAll("#percentage");
-          percentage.innerHTML = gsap.getProperty(
-            ".progessing-bar",
-            "scaleX" * 100
-          );
-          console.log(percentage.innerHTML);
+          percentage.forEach((item, index)=> {
+            item.innerHTML = Math.round(gsap.getProperty(
+              ".progessing-bar",
+              "scaleX"
+            ) * 100) + '%';
+          })
+          
         },
 
         ease: "bounce.out",
