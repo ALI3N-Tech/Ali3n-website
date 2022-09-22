@@ -92,6 +92,28 @@
     padding-top: 10px;
 }
 
+.values-content-heading>span{
+    font-size: 23px;
+    color: #072a6c;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.values-content-heading>h2{
+    padding-top: 20px;
+    font-size: 37px;
+    font-family: 'Lato', sans-serif;
+}
+
+.values-content-body>p{
+    padding-top: 22px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: t;
+}
+
+.animation-area{
+    font-family: 'Lato', sans-serif;
+}
+
 
 @media (max-width:1000px){
     .values{
