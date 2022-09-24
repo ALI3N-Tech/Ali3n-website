@@ -5,12 +5,17 @@ import job from "../images/people.jpg";
 import fashion from "../images/catwalk.jpg";
 import "./OurCoreValues.css";
 import { gsap } from "gsap";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function OurCoreValues() {
   const ref = useRef(null);
 
   gsap.registerPlugin(ScrollTrigger);
+
+  const count = { value: 0 };
+  const newValue = 100;
 
   useEffect(() => {
     const progressBars = ref.current;
@@ -23,16 +28,18 @@ function OurCoreValues() {
       {
         scaleX: 1,
         duration: 2.5,
+
         onUpdate: () => {
           // const percentage = document.querySelectorAll("#percentage");
           // percentage.innerHTML =
           //   100 * progressBars.querySelectorAll(".progessing-bar").style.scaleX;
 
           const percentage = document.querySelectorAll("#percentage");
-          percentage.innerHTML = gsap.getProperty(
-            ".progessing-bar",
-            "scaleX" * 100
-          );
+          percentage.forEach((item, index) => {
+            item.innerHTML =
+              Math.round(gsap.getProperty(".progessing-bar", "scaleX") * 100) +
+              "%";
+          });
           console.log(percentage.innerHTML);
         },
 
@@ -46,9 +53,11 @@ function OurCoreValues() {
         },
       }
     );
+
+    Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div className="values" ref={ref}>
+    <div data-aos="fade-right" className="values" ref={ref}>
       <Problem
         src={job}
         img1Text1={"15+"}
@@ -57,7 +66,7 @@ function OurCoreValues() {
         img2Text2={" CLIENTS"}
         src2={fashion}
       />
-      <div className="values-content">
+      <div data-aos="fade-left" className="values-content">
         <div className="values-content-heading">
           <span>About Us</span>
           <h2>Our Core Values</h2>

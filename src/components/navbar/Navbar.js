@@ -4,8 +4,10 @@ import pic from "../../images/ALI3N_LOGO2-1 1.png";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Button } from "../Button";
 import "./Navbar.css";
+import ReactSwitch from "react-switch";
 
-function Navbar() {
+// export const ThemeContext = createContext(null);
+function Navbar(props) {
   const [click, setClick] = useState(true);
   const [button, setButton] = useState(true);
 
@@ -78,6 +80,14 @@ function Navbar() {
               </Link>
             </li> */}
           </ul>
+
+          <div className="switch">
+            <ReactSwitch
+              onChange={props.toggleTheme}
+              checked={props.theme === "light"}
+            />
+          </div>
+
           {/* {button && <Button buttonStyle="btn--primary">Login</Button>}
           {button && <Button buttonStyle="btn--secondary">Sign up</Button>} */}
         </div>

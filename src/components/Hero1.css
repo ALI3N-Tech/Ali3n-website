@@ -2,7 +2,7 @@
     width: 100%;
     height: 100%;
     padding-top: 50px;
-    z-index: -1;
+    z-index: 1;
     object-fit: cover;
     /* position: fixed; */
 }
@@ -15,6 +15,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 1;
 }
 
 .scribbles>h1{

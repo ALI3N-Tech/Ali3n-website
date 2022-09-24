@@ -12,13 +12,24 @@
 
 .ourCompanyTitles>h2{
     padding-top: 20px;
-    font-size: 37px;
+    font-size: 45px;
     font-family: 'Lato', sans-serif;
+}
+#dark .ourCompanyTitles>h2{
+    padding-top: 20px;
+    font-size: 45px;
+    font-family: 'Lato', sans-serif;
+    color: #f3f3f3;
 }
 
 .ourCompanyTitles>span{
     font-size: 23px;
     color: #072a6c;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#dark .ourCompanyTitles>span{
+    font-size: 23px;
+    color: #5e87d3;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -28,17 +39,37 @@
     padding-top: 50px;
     justify-content: space-around;
     /* width: 100%; */
-    gap: 30px;
-    
-   
-    
+    gap: 30px;  
 }
+
+/* .fade-in{
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+.fade-in.appear{
+    opacity: 1;
+} */
 
 
 .eachCompany{
     border-radius: 19px;
     background: linear-gradient(145deg, #f3f3f3, #fffefe);
-    box-shadow:  10px 10px 20px #b1b1b1, -10px -10px 20px #ffffff;
+    box-shadow:  1px 1px 8px #b1b1b1, 1px 1px 8px #ffffff;
+    /* font-size: 50px; */
+    padding: 60px 15px;
+    width: 28%;
+    /* transition: ; */
+    cursor: pointer;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    /* z-index: 999; */
+
+}
+#dark .eachCompany{
+    border-radius: 19px;
+    background: #5e87d3;
+    box-shadow:  rgba(0, 0, 0, 0.1) 0px 3px 12px 0px;
     /* font-size: 50px; */
     padding: 60px 15px;
     width: 28%;
@@ -79,27 +110,62 @@
     border-radius: 19px;
     z-index: 0;
 }
+#dark .eachCompany:hover::after{
+    top: 0;
+    left: 0;
+    /* right: 100%; */
+    bottom: 0;
+    color: #f3f3f3;
+    border-radius: 19px;
+    z-index: 0;
+}
 
 @media (max-width:950px){
     .companies{
+        display: inline-block;
+    }
+    #dark .companies{
         display: inline-block;
     }
     .eachCompany{
         width: 100%;
         margin-top: 40px;
     }
+    #dark .eachCompany{
+        width: 100%;
+        margin-top: 40px;
+    }
 }
-/* .eachCompany:hover{
-    color: #f3f3f3;
-    z-index: 10;
-} */
+.eachCompany:hover{
+    color: #fff;
+    /* z-index: 10; */
+}
+#dark .eachCompany:hover{
+    color: rgb(5, 0, 0);
+    /* z-index: 10; */
+}
 
 
 
 .eachCompany::after{
     content: "";
     position: absolute;
-    background-color: #97bbff;
+    background-color: #072a6c;
+    height: 100%;
+    width: 100%;
+    top: 100%;
+    left: -100%;
+    border-radius: 1000px;
+    z-index: -1;
+    transition: all  ease;
+    transition-delay: 0;
+    transition-duration: 0.5s;
+    box-sizing: border-box;
+}
+#dark .eachCompany::after{
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
     height: 100%;
     width: 100%;
     top: 100%;
