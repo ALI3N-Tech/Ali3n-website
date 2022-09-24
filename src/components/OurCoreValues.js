@@ -22,7 +22,6 @@ function OurCoreValues() {
     gsap.fromTo(
       progressBars.querySelectorAll(".progessing-bar"),
       {
-        opacity: 1,
         scaleX: 0,
       },
       {
@@ -40,7 +39,6 @@ function OurCoreValues() {
               Math.round(gsap.getProperty(".progessing-bar", "scaleX") * 100) +
               "%";
           });
-          console.log(percentage.innerHTML);
         },
 
         ease: "bounce.out",
