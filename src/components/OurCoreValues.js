@@ -71,14 +71,17 @@ function OurCoreValues() {
         </div>
         <div className="values-content-body">
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
-            perspiciatis exercitationem suscipit hic veritatis. Quam quos cumque
-            eius perferendis maxime nemo, repudiandae aut officia qui sint
-            voluptatum impedit, nam dolor. <br></br>
-            <br></br> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Architecto, praesentium quas. Porro consequuntur reprehenderit nulla
-            quos? Deleniti consequuntur laudantium optio, eveniet ut dignissimos
-            aperiam similique voluptate, voluptatibus sint dolorem ipsum?
+            The ALI3N Brand is a tri-dimensional brand focusing on FASHION,
+            ENTERTAINMENT and TECH and the creatives sectioned in each
+            department. Ali3n is coupled with the responsibility of harboring
+            these creatives and connecting them with bigger individuals as well
+            as working on standard projects with them. WE also take it as a
+            mantra to provide the best of services to our clients, be it private
+            individuals or companies<br></br>
+            <br></br> We make all of these possible by utilizing our 21st
+            century available resources in areas which they are needed the most,
+            and not to forget our skilled and creative employees who are skilled
+            in each faction they occupy and manage.
           </p>
         </div>
         <div className="animation-area">

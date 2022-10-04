@@ -1,0 +1,256 @@
+.footerImg img{
+    height: 100px;
+    width: 180px;
+}
+
+.followUs{
+    display: flex;
+    padding-top: 25px;
+    justify-content: space-between;
+    font-size: 20px;
+    align-items: center;
+    color: white;
+}
+.facebook{
+    font-size: 26px;
+    color: #072a6c;
+}
+#dark .facebook{
+    font-size: 26px;
+    color: #5e87d3;
+}
+.instagram{
+    font-size: 26px;
+    color: #072a6c;
+}
+#dark .instagram{
+    font-size: 26px;
+    color: #5e87d3;
+}
+.twitter{
+    font-size: 26px;
+    color: #072a6c;
+}
+#dark .twitter{
+    font-size: 26px;
+    color: #5e87d3;
+}
+.footerSection{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(0,0,0,0.6);
+    padding: 100px 0;
+    border-bottom: 1px solid rgb(139, 136, 136);
+    border-top: 1px solid rgb(139, 136, 136);
+}
+#dark .footerSection{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1C273A;
+    padding: 100px 0;
+    border-bottom: 1px solid rgb(139, 136, 136);
+    border-top: 1px solid rgb(139, 136, 136);
+}
+
+
+
+.footerEmail{
+    font-size: 20px;
+    color: white;
+}
+.footerEmail input{
+    padding: 20px;
+     border: none;
+     background-color: transparent;
+     font-size: 15px;
+     color: white;
+}
+.footerEmail input{
+    padding: 20px;
+     border: none;
+     background-color: transparent;
+     font-size: 15px;
+}
+
+.footerEmail input:focus{
+    outline: none;
+    caret-color: white;
+}
+
+
+.footerEmail .fiSend{
+    font-size: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 12px;
+    border-radius: 10px;
+    /* padding-bottom: 10px; */
+    color: white;
+    text-decoration: none;
+    background-color: #072a6c;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#dark .footerEmail .fiSend{
+    font-size: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 12px;
+    border-radius: 10px;
+    /* padding-bottom: 10px; */
+    color: white;
+    text-decoration: none;
+    background-color: #5e87d3;
+    margin-left: 10px;
+}
+.emailSending{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    margin-top:15px;
+    padding: 3px;
+    border-radius: 5px;
+    text-decoration: none;
+   
+    
+}
+
+/* .emailSending form{
+    display: flex;
+    justify-content: space-around;
+} */
+
+
+.footerHeading{
+    position: relative;
+}
+.footerHeading h3{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: white;
+    
+
+}
+.footerHeading::after{
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #072a6c;
+    left: 6px;
+    
+}
+#dark .footerHeading::after{
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 3px;
+    background: #5e87d3;
+    left: 6px;
+    
+}
+.topics{
+    padding-top: 25px;
+}
+.topics p{
+    padding-top: 15px;
+    font-size: 17px;
+    color: white;
+    transition: all 0.7s ease;
+}
+
+.topics p:hover{
+    transform: translateX(10px);
+    color: #072a6c;
+}
+#dark .topics p:hover{
+    transform: translateX(10px);
+    color: #5e87d3;
+}
+.contactTopics{
+    padding-top: 25px;
+}
+.contactTopics p{
+    padding-top: 15px;
+    font-size: 17px;
+    color: white;
+    transition: all 0.7s ease;
+    display: flex;
+    gap: 10px;
+    /* align-items: center; */
+}
+.contactTopics .icons{
+    color: #072a6c;
+    font-size: 30px;
+}
+#dark .contactTopics .icons{
+    color: #5e87d3;
+    font-size: 30px;
+}
+
+.lastPart{
+    display: flex;
+    gap: 15px;
+    align-items:center;
+    padding-top: 20px;
+}
+.footerEmail span{
+    position: relative;
+    margin: 20px;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    z-index: 3;
+}
+@media(max-width:1100px){
+    .footerSection{
+        display: block;
+        /* text-align: center; */
+        padding-left: 40px;
+    }
+    .second-section{
+        padding-top: 30px;
+    }
+    .emailSending{
+        border: 1px solid;
+       
+    }
+    .followUs{
+        justify-content: left;
+        gap: 30px;
+    }
+    .emailSending{
+        justify-content: space-between;
+        margin-right: 20px;
+    }
+
+    /* .emailSending form{
+        display: flex;
+        justify-content: space-around;
+    } */
+    #dark .footerSection{
+        display: block;
+        /* text-align: center; */
+        padding-left: 40px;
+    }
+    #dark .second-section{
+        padding-top: 30px;
+    }
+    #dark .emailSending{
+        border: 1px solid;
+       
+    }
+    #dark .followUs{
+        justify-content: left;
+        gap: 30px;
+    }
+    #dark .emailSending{
+        justify-content: space-between;
+        /* gap: 200px; */
+    }
+}
+
+

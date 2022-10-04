@@ -52,8 +52,8 @@ function SlidingSection() {
           <h2>Businesses That Align With Our Goals</h2>
         </div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut provident
-          voluptates sunt quo dicta illum error corrupti nemo corporis nihil?
+          Under ALI3N we operate a wide-range of businesses and services that
+          matches your desired goal(s)<br></br>Take a look below.
         </p>
       </div>
 

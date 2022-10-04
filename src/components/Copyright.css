@@ -1,0 +1,28 @@
+.copyRight{
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+   /* text-align: center; */
+   padding: 30px 0 30px 0;
+   color: white;
+   background-color: rgba(0,0,0,0.6);
+   margin:  auto;
+   /* width: 100%; */
+}
+#dark .copyRight{
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+   /* text-align: center; */
+   padding: 30px 0 30px 0;
+   color: white;
+   background-color: #1C273A;
+   margin:  auto;
+   /* width: 100%; */
+}
+p span{
+    color: #072a6c;
+}
+#dark p span{
+    color: #5e87d3;
+}

@@ -1,0 +1,65 @@
+.inputNewsletter{
+    
+    padding: 10px;
+    width: 90%;
+    align-items: center;
+}
+
+.inputFlex{
+    margin-top: 20px;
+}
+
+.formik{
+    width: 60%;
+    padding: 50px 60px 50px 60px;
+    background-color: rgb(249, 250, 252);
+    border-radius: 10px;
+    
+    display: flex;
+    flex-direction: column;
+
+}
+.formik h2{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.NewsletterBtn{
+    width: 100px;
+    padding: 10px 20px;
+    border: 1px solid #072a6c;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: #072a6c;
+    color: white;
+    transition: all ;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.disabled{
+    opacity: 0.5;
+    
+}
+#dark .NewsletterBtn{
+    width: 100px;
+    padding: 10px 20px;
+    border: 1px solid #5e87d3;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: #5e87d3;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.LabelLabel span{
+    color: #4e4e4e;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.errorMessage-Newsletter{
+    color: red;
+}
+
+@media (max-width:1100px){
+    .formik{
+        margin: 10px auto;
+    }
+}

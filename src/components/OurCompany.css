@@ -84,7 +84,8 @@
 
 .eachCompany p{
     padding-top: 15px;
-    font-size: 23px;
+    font-size: 18px;
+    line-height: 25px;
     z-index: 10;
     font-family: 'Source Sans Pro', sans-serif;
     /* position: absolute; */

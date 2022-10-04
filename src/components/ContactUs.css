@@ -1,0 +1,229 @@
+.contact-us{
+    padding-top: 90px;
+}
+.contactUsBody{
+    width: 90%;
+    margin: 0px auto;
+    padding: 100px 0;
+}
+.contactUsHeading{
+    text-align: center;
+}
+.wrapperWrapper{
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-between;
+}
+.theContacts{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 35px;
+    background: linear-gradient(145deg, #f3f3f3, #fffefe);
+    box-shadow:  1px 1px 8px #b1b1b1, 1px 1px 8px #ffffff;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+#dark .theContacts{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 35px;
+    background: #5e87d3;
+    box-shadow:  rgba(0, 0, 0, 0.1) 0px 3px 12px 0px;
+    border-radius: 10px;
+}
+.contactIcon{
+    font-size: 40px;
+    height: 80px;
+    width: 80px;
+    background-color: #072a6c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1000px;
+    color: white;
+    z-index: 3;
+    position: relative;
+}
+#dark .contactIcon{
+    font-size: 40px;
+    height: 80px;
+    width: 80px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1000px;
+    color: #5e87d3;
+    z-index: 3;
+    position: relative;
+}
+.contactTexting p{
+    padding-top: 15px;
+}
+
+.contactUsHeading>span{
+    font-size: 23px;
+    color: #072a6c;
+    font-family: 'Source Sans Pro', sans-serif;   
+}
+#dark .contactUsHeading>span{
+    font-size: 23px;
+    color: #5e87d3;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.contactUsHeading>h2{
+    padding-top: 20px;
+    font-size: 45px;
+    font-family: 'Lato', sans-serif;
+    /* color: #f3f3f3;   */
+}
+#dark .contactUsHeading>h2{
+    padding-top: 20px;
+    font-size: 45px;
+    font-family: 'Lato', sans-serif;
+    color: #f3f3f3;  
+}
+.contactTexting>span{
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900; 
+    position: relative;
+    z-index: 3;
+}
+.contactTexting>p{
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;    
+    /* font-weight: lighter; */
+    z-index: 3;
+    position: relative;
+}
+#dark .contactTexting>span{
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900; 
+    color: #f3f3f3;  
+
+}
+#dark .contactTexting>p{
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;    
+    /* font-weight: lighter; */
+    color: #f3f3f3;  
+
+}
+
+.theContacts::after{
+    content: "";
+    position: absolute;
+    background-color: #072a6c;
+    height: 100%;
+    width: 100%;
+    top: 100%;
+    left: -100%;
+    border-radius: 100px;
+    z-index: -1;
+    transition: all  ease;
+    transition-delay: 0;
+    transition-duration: 0.5s;
+    box-sizing: border-box;
+}
+#dark .theContacts::after{
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+    top: 100%;
+    left: -100%;
+    border-radius: 100px;
+    z-index: -1;
+    transition: all  ease;
+    transition-delay: 0;
+    transition-duration: 0.3s;
+    box-sizing: border-box;
+}
+
+.theContacts:hover::after{
+    top: 0;
+    left: 0;
+    /* right: 100%; */
+    bottom: 0;
+    color: #f3f3f3;
+    border-radius: 10px;
+    z-index: 0;
+}
+#dark .theContacts:hover::after{
+    top: 0;
+    left: 0;
+    /* right: 100%; */
+    bottom: 0;
+    color: #f3f3f3;
+    border-radius: 10px;
+    z-index: 0;
+}
+.forming{
+    display: flex;
+    justify-content: space-evenly;
+}
+.theContacts:hover p, .theContacts:hover span{
+    color: #f3f3f3;
+}
+#dark .theContacts:hover p, #dark .theContacts:hover span{
+    color: #5e87d3;
+}
+.theContacts:hover .contactIcon{
+    color: #072a6c;
+    background-color: #f3f3f3;
+}
+#dark .theContacts:hover .contactIcon{
+    color: #f3f3f3;
+    background-color: #5e87d3;
+}
+@media(max-width:1200px){
+    .wrapperWrapper{
+        display: block;
+    }
+    .theContacts{
+        margin-top: 20px;
+    }
+    .contactIcon{
+        font-size: 20px;
+        height: 50px;
+        width: 50px;
+    }
+    #dark .wrapperWrapper{
+        display: block;
+    }
+    #dark .theContacts{
+        margin-top: 20px;
+    }
+    #dark .contactIcon{
+        font-size: 20px;
+        height: 50px;
+        width: 50px;
+    }
+   
+}
+@media (max-width:1100px){
+    .forming{
+        display: block;
+    }
+}
+@media(max-width:500px){
+    .contactTexting>span{
+        font-size: 15px;
+    }
+    .contactTexting>p{
+        font-size: 13px;
+    }
+    #dark .contactTexting>span{
+        font-size: 15px;
+    }
+    #dark .contactTexting>p{
+        font-size: 13px;
+    }
+}

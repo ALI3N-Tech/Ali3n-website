@@ -21,7 +21,7 @@ function Testimonials() {
       </div>
       <div className="ourTestimonies">
         <IndividualTestimony src={img1} h3={"Ayo"} span={"Forex Trader"} />
-        <IndividualTestimony src={img2} h3={"Christian"} span={"Networer"} />
+        <IndividualTestimony src={img2} h3={"Christian"} span={"Networker"} />
         <IndividualTestimony src={img3} h3={"Sultan"} span={"Web Dev"} />
         <IndividualTestimony src={img4} h3={"Mary"} span={"Web Designer"} />
         <IndividualTestimony

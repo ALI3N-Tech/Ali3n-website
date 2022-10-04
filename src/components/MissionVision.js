@@ -20,10 +20,11 @@ function MissionVision() {
         </div>
         <div className="mission-paragraph">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-            dolorum animi reiciendis suscipit quis inventore tempora sed
-            deleniti quibusdam modi, perferendis iste temporibus, veniam eos
-            natus repellat incidunt tenetur quos!
+            Prosperity and sel-sufficiency on company's job(s) and our client's
+            jobs would always come in as first hand priority. Same goes to our
+            world-class creatives in each factions.
+            <br></br>Do you feel your brand,business, craft or creativity is not
+            self-suffient enough?? Why not hit us up?
           </p>
         </div>
 
@@ -33,10 +34,10 @@ function MissionVision() {
               <FaChartArea />
             </div>
             <div className="productBody">
-              <h3>Entreprenuship</h3>
+              <h3>Entreprenureship</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                fuga quidem possimus earum, laboriosam placeat!
+                Giving GenZs and creatives the premium ability to be sound and
+                verified entreprenures in their various field.
               </p>
             </div>
           </div>
@@ -47,8 +48,9 @@ function MissionVision() {
             <div className="productBody">
               <h3>Leadership</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                fuga quidem possimus earum, laboriosam placeat!
+                Building the best leadership traits for our entrusted clients
+                and creatives, as well as with-holding the leadership position
+                among brands in Africa.
               </p>
             </div>
           </div>
@@ -59,8 +61,8 @@ function MissionVision() {
             <div className="productBody">
               <h3>Excellence</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                fuga quidem possimus earum, laboriosam placeat!
+                Making excellence our watchword as well as making excellence the
+                status of whatever we work on and our client's works.
               </p>
             </div>
           </div>

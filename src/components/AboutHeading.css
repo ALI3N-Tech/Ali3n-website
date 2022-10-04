@@ -1,0 +1,38 @@
+.aboutImage{
+    padding-top: 90px;
+    
+}
+.topPart{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/about.jpg);
+    width: 100%;
+    height: 390px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+   
+}
+
+.topPart h3{
+    padding-top: 140px;
+    font-size: 40px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    
+}
+.topPart p{
+    color: white;
+    padding-top: 20px;
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.coreValues{
+    padding-top: 60px;
+}
+.mission2{
+    padding: 50px 0;
+}
+.link-s{
+    text-decoration: none;
+    color: white;
+}

@@ -2,6 +2,7 @@ import React from "react";
 import video from "../images/video-2.mp4";
 import "./Hero1.css";
 import { Button } from "./Button";
+import { Link } from "react-router-dom";
 
 function Hero1() {
   return (
@@ -10,14 +11,15 @@ function Hero1() {
       <div className="scribbles">
         <h1>WELCOME TO ALI3N EMPIRE</h1>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-          debitis repellendus sint adipisci officiis pariatur<br></br> id eius
-          error possimus exercitationem!
+          Africa's First Tri-dimensional Brand Aimed At TECH, ENTERTAINMENT and
+          FASHION. The newest home for creatives. <br></br> Welcome Onboard!
         </p>
         <div className="hero-btns">
-          <Button buttonSize={"btn--large"} buttonStyle={"btn--primary"}>
-            EXPLORE US
-          </Button>
+          <Link>
+            <Button buttonSize={"btn--large"} buttonStyle={"btn--primary"}>
+              EXPLORE US
+            </Button>
+          </Link>
         </div>
       </div>
       {/* <section class="curved"></section> */}

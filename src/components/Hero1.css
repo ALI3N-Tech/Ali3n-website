@@ -11,7 +11,7 @@
     position: absolute;
     top: 40%;
     color: white;
-    left: 5%;
+    left: 8%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,9 +27,10 @@
 
 .scribbles>p{
     padding-bottom: 40px;
-    font-size: 27px;
+    font-size: 24px;
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
+    line-height: 35px;
     
 }
 

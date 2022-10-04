@@ -1,0 +1,99 @@
+.form-control{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 auto; */
+    padding: 50px ;
+    background-color: rgb(249, 250, 252);
+    position: relative;
+    border-radius: 10px;
+}
+.form-control .inputed{
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.form-control textarea{
+    margin-top: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.takeOff-Btn{
+    font-family: 'Source Sans Pro', sans-serif;
+    border: 1px solid #072a6c;
+    /* position: absolute; */
+    border-radius: 10px;
+    /* top: 430px; */
+    padding: 10px 20px;
+    margin-top: 20px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: #072a6c;
+    color: white;
+    cursor: pointer;
+    
+}
+#dark .takeOff-Btn{
+    font-family: 'Source Sans Pro', sans-serif;
+    border: 1px solid #5e87d3;
+    /* position: absolute; */
+    border-radius: 10px;
+    /* top: 430px; */
+    padding: 10px 20px;
+    margin-top: 20px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: #5e87d3;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.takeOff-Btn .disabled{
+    opacity: 0.5;
+   
+}
+#dark .takeOff-Btn .disabled{
+    opacity: 0.5;
+    
+}
+
+.btn--submit{
+    border: none;
+    color: white;
+    background-color: transparent;
+    font-size: 15px;
+    cursor: pointer;
+    
+}
+
+.formSession{
+    padding-bottom: 90px;
+}
+
+.form-control span{
+    position: relative;
+    margin-top: 10px;
+    color: black;
+    font-size: 15px;
+}
+.errorMessage-Message{
+    margin-left: 10px;
+    color: red;
+}
+
+.form-control h2{
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+}
+@media(max-width:1100px){
+    .form-control{
+        width: 70%;
+        margin:40px auto;
+    }
+}
