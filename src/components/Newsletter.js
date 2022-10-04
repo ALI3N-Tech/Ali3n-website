@@ -1,10 +1,9 @@
 import React from "react";
-import { Formik, Form, Field, ErrorMessage, FormikHelpers } from "formik";
+import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import "./Newsletter.css";
 import Label from "./Label";
 import axios from "axios";
-import { SubscribeUser } from "./apiCallls";
 
 const Newsletter = () => {
   const submitForm = async (values) => {
@@ -18,7 +17,7 @@ const Newsletter = () => {
         },
         email_address: email,
       };
-      await axios.post("/netlify/function/test", payload);
+      await axios.post("/.netlify/functions/add-email-subscriber", payload);
       alert("Contact details were added successfully");
     } catch (error) {
       alert(error.message);

@@ -2,7 +2,7 @@ const axios = require("axios");
 
 exports.handler = async (event, context) => {
   const listId = "94538a4cbd";
-  const apiKey = "9465397e0c69aac81b2bfc060b006d10-us14";
+  const apiKey = "3489afd06ab638875e53023a3f6aeae1-us14";
 
   const body = JSON.parse(event.body);
   const { email_address, merge_fields } = body;
@@ -37,10 +37,8 @@ exports.handler = async (event, context) => {
   } catch (error) {
     console.log(error);
     return {
-      statusCode: err.response.status,
+      statusCode: error.response.status,
       body: JSON.stringify(error),
     };
-  }
-  {
   }
 };
