@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import "./SlidingSection.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -24,7 +24,7 @@ import event from "../images/event mgt.jpeg";
 // import "swiper/css/autoplay";
 
 function SlidingSection() {
-  const ref = useRef(null);
+  // const ref = useRef(null);
 
   // gsap.registerPlugin(ScrollTrigger);
 

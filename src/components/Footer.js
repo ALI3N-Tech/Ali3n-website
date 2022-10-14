@@ -15,7 +15,7 @@ import {
 import { HiOutlineMail } from "react-icons/hi";
 import { FiSend } from "react-icons/fi";
 // import db from "./firebase";
-import firebase from "firebase/app";
+// import firebase from "firebase/app";
 import { getDatabase, ref, push, set } from "firebase/database";
 
 import app from "./firebase";
