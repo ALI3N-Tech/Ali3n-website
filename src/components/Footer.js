@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import "./Footer.css";
-import Aos from "aos";
-import { Link } from "react-router-dom";
+// import Aos from "aos";
+// import { Link } from "react-router-dom";
 import "aos/dist/aos.css";
 import pic from "../images/ALI3N_LOGO2-1 1.png";
 import {

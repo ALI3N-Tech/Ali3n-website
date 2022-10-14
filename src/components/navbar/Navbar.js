@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import pic from "../../images/ALI3N_LOGO2-1 1.png";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Button } from "../Button";
+// import { Button } from "../Button";
 import "./Navbar.css";
 import ReactSwitch from "react-switch";
 

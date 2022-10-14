@@ -11,7 +11,7 @@ import fashionShow from "../images/fashionShow.jpg";
 import webDesign from "../images/webDesign.jpg";
 import creative from "../images/creative.jpeg";
 import wireless1 from "../images/wireless1.jpeg";
-import wireless2 from "../images/wireless2.jpeg";
+// import wireless2 from "../images/wireless2.jpeg";
 import music from "../images/music promotion.jpeg";
 import artiste from "../images/artiste mgt.jpeg";
 import event from "../images/event mgt.jpeg";
