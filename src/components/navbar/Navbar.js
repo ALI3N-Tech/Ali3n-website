@@ -9,7 +9,7 @@ import ReactSwitch from "react-switch";
 // export const ThemeContext = createContext(null);
 function Navbar(props) {
   const [click, setClick] = useState(true);
-  //const [button, setButton] = useState(true);
+  const [button, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => {
