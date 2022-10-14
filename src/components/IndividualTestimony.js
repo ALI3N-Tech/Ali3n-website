@@ -15,9 +15,8 @@ function IndividualTestimony(props) {
       </div>
       <div className="testimonyBody">
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error sequi
-          ut quasi placeat porro ipsam temporibus corrupti ipsa neque fugit,
-          maxime sapiente distinctio praesentium.
+          ALI3N is the future, which will definitely be among the leading brands
+          in Africa and the world at large.
         </p>
       </div>
       <div className="testimonyBottom">

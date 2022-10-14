@@ -9,6 +9,12 @@ import cyber from "../images/cyber.jpg";
 import dj from "../images/dj.jpg";
 import fashionShow from "../images/fashionShow.jpg";
 import webDesign from "../images/webDesign.jpg";
+import creative from "../images/creative.jpeg";
+import wireless1 from "../images/wireless1.jpeg";
+import wireless2 from "../images/wireless2.jpeg";
+import music from "../images/music promotion.jpeg";
+import artiste from "../images/artiste mgt.jpeg";
+import event from "../images/event mgt.jpeg";
 
 // import { gsap } from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -63,58 +69,72 @@ function SlidingSection() {
             src={cyber}
             h3={"WORLD OF TECH"}
             paragraph={
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, tempore. Saepe non cumque unde tenetur possimus nobis quod incidunt earum obcaecati adipisci! Odio nisi autem distinctio fuga iste dignissimos ullam."
+              "Explore our diverse world of tech and pick the tech services you seem to be needing for yourself or your brand."
             }
           />
           <EachSlider
             src={dj}
             h3={"TOP NOTCH CREATIVES"}
             paragraph={
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, tempore. Saepe non cumque unde tenetur possimus nobis quod incidunt earum obcaecati adipisci! Odio nisi autem distinctio fuga iste dignissimos ullam."
+              "Come onboard and book our numerous creatives representing various department on the ALI3N brand."
             }
           />
           <EachSlider
             src={fashionShow}
-            h3={"WORLD CLASS MODELS"}
+            h3={"WORLD CLASS MODELS BOOKING"}
             paragraph={
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, tempore. Saepe non cumque unde tenetur possimus nobis quod incidunt earum obcaecati adipisci! Odio nisi autem distinctio fuga iste dignissimos ullam."
+              "Step into spotlight as you link up with our prestige Creative Directors to place bookings for our World-class models for your brand, your businesses, your fashion show and a lot more."
             }
           />
           <EachSlider
             src={webDesign}
-            h3={"CLASSIC WEB DESIGN"}
+            h3={"ARTISTE MANAGEMENT"}
             paragraph={
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, tempore. Saepe non cumque unde tenetur possimus nobis quod incidunt earum obcaecati adipisci! Odio nisi autem distinctio fuga iste dignissimos ullam."
+              "Send in your artiste(s) for premium management, upbringing, artistry teachings and a lot more so as to improve their craft and sound."
             }
           />
         </div>
         <div className="second-item">
           <EachSlider
-            src={cyber}
-            h3={"WORLD OF TECH"}
+            src={wireless1}
+            h3={"WIRELESS GIG"}
             paragraph={
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, tempore. Saepe non cumque unde tenetur possimus nobis quod incidunt earum obcaecati adipisci! Odio nisi autem distinctio fuga iste dignissimos ullam."
+              "Book us today and let us get you those gigs related to your creativity and craft."
             }
           />
           <EachSlider
-            src={dj}
-            h3={"TOP NOTCH CREATIVES"}
+            src={music}
+            h3={"MUSIC PROMOTION AND DISTRIBUTION"}
             paragraph={
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, tempore. Saepe non cumque unde tenetur possimus nobis quod incidunt earum obcaecati adipisci! Odio nisi autem distinctio fuga iste dignissimos ullam."
+              "Bring in your songs or your artiste's songs for distribution and standard effective promotion."
+            }
+          />
+          <EachSlider
+            src={event}
+            h3={"EVENT MGT AND PLANNING"}
+            paragraph={
+              "Let's come in as the event management company for your event(s) as we bring the public to your square with exclusive event contents."
             }
           />
           <EachSlider
             src={fashionShow}
-            h3={"WORLD CLASS MODELS"}
+            h3={"FASHION HUB"}
             paragraph={
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, tempore. Saepe non cumque unde tenetur possimus nobis quod incidunt earum obcaecati adipisci! Odio nisi autem distinctio fuga iste dignissimos ullam."
+              "Take a look at our fashion hub for exclusive fashion news, updates and our fashion marketplace for our Classy fashion accessories."
             }
           />
           <EachSlider
-            src={webDesign}
-            h3={"CLASSIC WEB DESIGN"}
+            src={artiste}
+            h3={"ENTERTAINERS BRANDING AND REBRANDING"}
             paragraph={
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, tempore. Saepe non cumque unde tenetur possimus nobis quod incidunt earum obcaecati adipisci! Odio nisi autem distinctio fuga iste dignissimos ullam."
+              "Are you an entertainer??....Why not hit us up for premium branding and let us market your craft to interested audiences."
+            }
+          />
+          <EachSlider
+            src={creative}
+            h3={"CREATIVES BUILD-UP"}
+            paragraph={
+              "Do you feel you are creative and you just need directions and a little bit of push to show you are the missing piece of a greater cause,poke us for your build-up programme."
             }
           />
         </div>

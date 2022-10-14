@@ -126,28 +126,28 @@ function Footer() {
 
       <div className="second-section">
         <div className="footerHeading">
-          <h3>Academic Service</h3>
+          <h3>Entertainment Service</h3>
         </div>
         <div className="topics">
           <p>
             {" "}
-            <FaAngleRight /> Web Development
+            <FaAngleRight /> Artist Promotion
           </p>
           <p>
             {" "}
-            <FaAngleRight /> Forex Trading
+            <FaAngleRight /> Music Distribution
           </p>
           <p>
             {" "}
-            <FaAngleRight /> Digital Marketing
+            <FaAngleRight /> Artist Recognision
           </p>
           <p>
             {" "}
-            <FaAngleRight /> CryptoCurrency
+            <FaAngleRight /> Event Planning
           </p>
           <p>
             {" "}
-            <FaAngleRight /> Marketing
+            <FaAngleRight /> Event Hosting
           </p>
         </div>
       </div>
