@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Academy from "../Academy";
 import Copyright from "../Copyright";
 import Footer from "../Footer";
@@ -9,7 +9,7 @@ import OurCoreValues from "../OurCoreValues";
 import SlidingSection from "../SlidingSection";
 import Testimonials from "../Testimonials";
 import "./Home.css";
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 // import ReactSwitch from "react-switch";
 
 // export const ThemeContext = createContext(null);

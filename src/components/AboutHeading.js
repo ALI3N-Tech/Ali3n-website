@@ -1,5 +1,5 @@
 import React from "react";
-import about from "../images/about.jpg";
+// import about from "../images/about.jpg";
 import "./AboutHeading.css";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";

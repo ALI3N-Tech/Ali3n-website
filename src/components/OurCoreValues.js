@@ -14,8 +14,8 @@ function OurCoreValues() {
 
   gsap.registerPlugin(ScrollTrigger);
 
-  const count = { value: 0 };
-  const newValue = 100;
+  // const count = { value: 0 };
+  // const newValue = 100;
 
   useEffect(() => {
     const progressBars = ref.current;

@@ -1,7 +1,7 @@
 import React from "react";
 import "./ContactUs.css";
 import { Link } from "react-router-dom";
-import { FaLocationArrow, FaPhoneAlt, FaRocket } from "react-icons/fa";
+import { FaLocationArrow, FaPhoneAlt } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import Forming from "./Form";
 import Footer from "./Footer";

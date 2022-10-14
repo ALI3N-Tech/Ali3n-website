@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaRegCopyright } from "react-icons/fa";
 import "./Copyright.css";
 
