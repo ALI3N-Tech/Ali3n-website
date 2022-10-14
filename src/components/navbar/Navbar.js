@@ -9,24 +9,24 @@ import ReactSwitch from "react-switch";
 // export const ThemeContext = createContext(null);
 function Navbar(props) {
   const [click, setClick] = useState(true);
-  const [button, setButton] = useState(true);
+  //const [button, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => {
     setClick(true);
   };
 
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
+  //const showButton = () => {
+  //  if (window.innerWidth <= 960) {
+  //    setButton(false);
+  //  } else {
+  //   setButton(true);
+  //  }
+  //};
 
-  useEffect(() => {
-    showButton();
-  }, []);
+  //useEffect(() => {
+  // showButton();
+  //}, []);
 
   window.addEventListener("resize", showButton);
   return (
