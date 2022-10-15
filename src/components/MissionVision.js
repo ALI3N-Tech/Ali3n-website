@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import Problem from "./Problem";
-import job from "../images/hands.jpg";
-import fashion from "../images/teamwork.jpg";
+// import Problem from "./Problem";
+// import job from "../images/hands.jpg";
+// import fashion from "../images/teamwork.jpg";
 import "./MissionVision.css";
 import { FaChartArea, FaSortAmountUpAlt, FaMountain } from "react-icons/fa";
 
