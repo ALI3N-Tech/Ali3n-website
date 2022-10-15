@@ -8,6 +8,7 @@ import { createContext } from "react";
 import { AnimatePresence } from "framer-motion";
 import EventsPage from "./components/pages/EventsPage";
 import ContactUsPage from "./components/pages/ContactUsPage";
+import { RingLoader } from "react-spinners";
 
 // import "~slick-carousel/slick/slick.css";
 // import "~slick-carousel/slick/slick-theme.css";
@@ -17,50 +18,73 @@ export const ThemeContext = createContext(null);
 
 function App() {
   const [theme, setTheme] = useState("light");
+  const [preloader, setPreloader] = useState(false);
 
   const toggleTheme = () => {
     setTheme((current) => (current === "light" ? "dark" : "light"));
   };
 
   useEffect(() => {
-    var loader = document.getElementById("preLoader");
-    // window.addEventListener("load", () => {
-    //   loader.style.display = "none";
-    // });
-    setTimeout(() => (loader.style.visibility = "hidden"), 4000);
-  });
+    // var loader = document.getElementById("preLoader");
+    // // window.addEventListener("load", () => {
+    // //   loader.style.display = "none";
+    // // });
+    // setTimeout(() => (loader.style.visibility = "hidden"), 4000);
+    setPreloader(true);
+    setTimeout(() => {
+      setPreloader(false);
+    }, 4000);
+  }, []);
+
+  const override = {
+    display: "flex",
+    justifyContent: "center",
+    margin: "20% auto",
+  };
   return (
     <>
-      <div id="preLoader"></div>
-      <AnimatePresence>
-        <Router>
-          <Navbar toggleTheme={toggleTheme} theme={theme} />
-          <Routes>
-            <Route
-              path="/"
-              exact
-              element={<Home theme={theme} toggleTheme={toggleTheme} />}
-            />
-            <Route
-              path="/about-us"
-              exact
-              element={<About theme={theme} toggleTheme={toggleTheme} />}
-            />
-            <Route
-              path="/events"
-              exact
-              element={<EventsPage theme={theme} toggleTheme={toggleTheme} />}
-            />
-            <Route
-              path="/contact-us"
-              exact
-              element={
-                <ContactUsPage theme={theme} toggleTheme={toggleTheme} />
-              }
-            />
-          </Routes>
-        </Router>
-      </AnimatePresence>
+      {/* <div id="preLoader"></div> */}
+      {preloader ? (
+        <RingLoader
+          cssOverride={override}
+          // className="preLoader"
+          color={"#072a6c"}
+          loading={preloader}
+          size={100}
+          margin={10}
+          width={200}
+        />
+      ) : (
+        <AnimatePresence>
+          <Router>
+            <Navbar toggleTheme={toggleTheme} theme={theme} />
+            <Routes>
+              <Route
+                path="/"
+                exact
+                element={<Home theme={theme} toggleTheme={toggleTheme} />}
+              />
+              <Route
+                path="/about-us"
+                exact
+                element={<About theme={theme} toggleTheme={toggleTheme} />}
+              />
+              <Route
+                path="/events"
+                exact
+                element={<EventsPage theme={theme} toggleTheme={toggleTheme} />}
+              />
+              <Route
+                path="/contact-us"
+                exact
+                element={
+                  <ContactUsPage theme={theme} toggleTheme={toggleTheme} />
+                }
+              />
+            </Routes>
+          </Router>
+        </AnimatePresence>
+      )}
     </>
   );
 }
