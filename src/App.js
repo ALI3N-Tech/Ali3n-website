@@ -24,9 +24,10 @@ function App() {
 
   useEffect(() => {
     var loader = document.getElementById("preLoader");
-    window.addEventListener("load", () => {
-      loader.style.display = "none";
-    });
+    // window.addEventListener("load", () => {
+    //   loader.style.display = "none";
+    // });
+    setTimeout((loader.style.display = "none"), 4000);
   });
   return (
     <>
