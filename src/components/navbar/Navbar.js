@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import pic from "../../images/ALI3N_LOGO2-1 1.png";
 import { FaBars, FaTimes } from "react-icons/fa";
