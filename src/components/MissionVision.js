@@ -13,6 +13,17 @@ function MissionVision() {
   });
   return (
     <div className="missionVision">
+      <div className="column" data-aos="fade-left">
+        {/* <Problem
+          src={job}
+          img1Text1={"30+"}
+          img1Text2={" CLIENTS"}
+          img2Text1={"50+"}
+          img2Text2={" MEMBERS"}
+          src2={fashion}
+          className="problem"
+        /> */}
+      </div>
       <div className="mission-heading" data-aos="fade-right">
         <div className="missionMainHeading">
           <span>Our Mission & Vision</span>
@@ -67,17 +78,6 @@ function MissionVision() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="column" data-aos="fade-left">
-        <Problem
-          src={job}
-          img1Text1={"30+"}
-          img1Text2={" CLIENTS"}
-          img2Text1={"50+"}
-          img2Text2={" MEMBERS"}
-          src2={fashion}
-          className="problem"
-        />
       </div>
     </div>
   );

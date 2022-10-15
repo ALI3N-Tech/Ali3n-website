@@ -33,14 +33,15 @@ function App() {
     setPreloader(true);
     setTimeout(() => {
       setPreloader(false);
-    }, 4000);
+    }, 8000);
   }, []);
 
   const override = {
     display: "flex",
     justifyContent: "center",
-    margin: "20% auto",
+    margin: "25% auto",
   };
+
   return (
     <>
       {/* <div id="preLoader"></div> */}
