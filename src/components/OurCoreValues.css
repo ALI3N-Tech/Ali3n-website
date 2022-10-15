@@ -289,6 +289,9 @@
     .img-wrap{
         display: none;
     }
+    #dark .img-wrap{
+        display: none;
+    }
 }
 
 @media (max-width:650px){

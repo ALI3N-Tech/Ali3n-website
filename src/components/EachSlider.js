@@ -5,7 +5,7 @@ import React from "react";
 // import "./swiper/swiper-bundle.css";
 // import "swiper/css";
 
-import { Button } from "./Button";
+// import { Button } from "./Button";
 
 function EachSlider(props) {
   // const slides = [];
@@ -23,9 +23,7 @@ function EachSlider(props) {
         <div className="slider-text">
           <h3> {props.h3}</h3>
           <p>{props.paragraph}</p>
-          <div className="read-more">
-            <Button>Read More</Button>
-          </div>
+          <div className="read-more">{/* <Button>Read More</Button> */}</div>
         </div>
       </div>
     </div>
