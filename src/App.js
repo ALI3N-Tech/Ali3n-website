@@ -54,6 +54,7 @@ function App() {
     <>
       {/* <div id="preLoader"></div> */}
       {preloader ? (
+        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100vw', height: '100vh'}}>
         <RingLoader
           cssOverride={override}
           // className="preLoader"
@@ -63,6 +64,7 @@ function App() {
           margin={10}
           width={200}
         />
+        </div>
       ) : (
         <AnimatePresence>
           <Router>
