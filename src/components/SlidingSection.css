@@ -332,23 +332,23 @@
 
 @media(max-width:870px){
     .slider-img img{
-        width: 400px;
+        width: 370px;
         height: 250px;
     }
     #dark .slider-img img{
-        width: 400px;
+        width: 370px;
         height: 250px;
     }
 
 
     .slider-text{
-        width: 330px;
-        height: 230px;
+        width: 300px;
+        height: 210px;
         top: 150px;
     }
     #dark .slider-text{
-        width: 330px;
-        height: 230px;
+        width: 300px;
+        height: 210px;
         top: 150px;
     }
 
