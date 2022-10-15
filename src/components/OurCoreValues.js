@@ -54,6 +54,7 @@ function OurCoreValues() {
 
     Aos.init({ duration: 2000 });
   }, []);
+
   return (
     <div data-aos="fade-right" className="values" ref={ref}>
       <Problem

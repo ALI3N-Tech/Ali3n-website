@@ -285,7 +285,14 @@
     }
 }
 
+@media(max-width:1080px){
+    .img-wrap{
+        display: none;
+    }
+}
+
 @media (max-width:650px){
+    
     .img-two img{
         width: 230px;
     }

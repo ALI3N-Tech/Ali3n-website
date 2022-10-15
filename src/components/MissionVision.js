@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-// import Problem from "./Problem";
-// import job from "../images/hands.jpg";
-// import fashion from "../images/teamwork.jpg";
+import Problem from "./Problem";
+import job from "../images/hands.jpg";
+import fashion from "../images/teamwork.jpg";
 import "./MissionVision.css";
 import { FaChartArea, FaSortAmountUpAlt, FaMountain } from "react-icons/fa";
 
@@ -14,7 +14,7 @@ function MissionVision() {
   return (
     <div className="missionVision">
       <div className="column" data-aos="fade-left">
-        {/* <Problem
+        <Problem
           src={job}
           img1Text1={"30+"}
           img1Text2={" CLIENTS"}
@@ -22,7 +22,7 @@ function MissionVision() {
           img2Text2={" MEMBERS"}
           src2={fashion}
           className="problem"
-        /> */}
+        />
       </div>
       <div className="mission-heading" data-aos="fade-right">
         <div className="missionMainHeading">
