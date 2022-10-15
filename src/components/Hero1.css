@@ -50,3 +50,10 @@
     border-bottom-left-radius: 50% 18%;
     border-bottom-right-radius: 50% 18%;
   } */
+
+  @media(max-width:600px){
+    .scribbles{
+        top:35%;
+        left:6%
+    }
+  }

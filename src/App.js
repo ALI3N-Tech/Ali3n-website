@@ -31,9 +31,13 @@ function App() {
     // // });
     // setTimeout(() => (loader.style.visibility = "hidden"), 4000);
     setPreloader(true);
-    setTimeout(() => {
+    // setTimeout(() => {
+    //   setPreloader(false);
+    // }, 8000);
+
+    window.addEventListener("load", () => {
       setPreloader(false);
-    }, 8000);
+    });
   }, []);
 
   const override = {
