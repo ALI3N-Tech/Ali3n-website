@@ -26,7 +26,8 @@ function App() {
   
 
   useEffect(() => {
-    setPreloader(false)
+    setTimeout(() => {setPreloader(false)}, 2000)
+    
     // var loader = document.getElementById("preLoader");
     // // window.addEventListener("load", () => {
     // //   loader.style.display = "none";
