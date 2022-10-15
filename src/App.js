@@ -18,30 +18,31 @@ export const ThemeContext = createContext(null);
 
 function App() {
   const [theme, setTheme] = useState("light");
-  const [preloader, setPreloader] = useState(false);
+  const [preloader, setPreloader] = useState(true);
 
   const toggleTheme = () => {
     setTheme((current) => (current === "light" ? "dark" : "light"));
   };
+  
 
   useEffect(() => {
+    setPreloader(false)
     // var loader = document.getElementById("preLoader");
     // // window.addEventListener("load", () => {
     // //   loader.style.display = "none";
     // // });
     // setTimeout(() => (loader.style.visibility = "hidden"), 4000);
-    setPreloader(true);
+    //setPreloader(true);
     // setTimeout(() => {
     //   setPreloader(false);
     // }, 8000);
-
-    window.addEventListener(
-      "load",
-      () => {
-        setPreloader(false);
-      },
-      setTimeout(2000)
-    );
+    // window.addEventListener(
+    //   "load",
+    //   () => {
+    //     setPreloader(false);
+    //   },
+    //   setTimeout(2000)
+    // );
   }, []);
 
   const override = {
