@@ -27,7 +27,7 @@ function App() {
     // window.addEventListener("load", () => {
     //   loader.style.display = "none";
     // });
-    setInterval(() => (loader.style.display = "none"), 4000);
+    setTimeout(() => (loader.style.visibility = "hidden"), 4000);
   });
   return (
     <>
