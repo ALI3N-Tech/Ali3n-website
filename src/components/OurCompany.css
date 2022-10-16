@@ -56,7 +56,7 @@
     background: linear-gradient(145deg, #f3f3f3, #fffefe);
     box-shadow:  1px 1px 8px #b1b1b1, 1px 1px 8px #ffffff;
     /* font-size: 50px; */
-    padding: 60px 15px;
+    padding: 60px 7px;
     width: 28%;
     /* transition: ; */
     cursor: pointer;
@@ -123,10 +123,11 @@
 
 @media (max-width:950px){
     .companies{
-        display: inline-block;
+        display: block;
+        margin: auto;
     }
     #dark .companies{
-        display: inline-block;
+        display: block;
     }
     .eachCompany{
         width: 100%;

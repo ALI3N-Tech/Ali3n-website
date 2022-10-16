@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Academy from "../Academy";
 import Copyright from "../Copyright";
 import Footer from "../Footer";
@@ -10,6 +10,8 @@ import SlidingSection from "../SlidingSection";
 import Testimonials from "../Testimonials";
 import "./Home.css";
 import { motion } from "framer-motion";
+import BackToTopButton from "../BackToTopButton";
+
 // import ReactSwitch from "react-switch";
 
 // export const ThemeContext = createContext(null);
@@ -30,6 +32,8 @@ function Home(props) {
       <MissionVision />
       <Testimonials />
       <Academy />
+
+      <BackToTopButton />
       <Footer />
       <Copyright />
     </motion.div>

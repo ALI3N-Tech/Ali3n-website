@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import ContactUs from "../ContactUs";
 import Copyright from "../Copyright";
+import BackToTopButton from "../BackToTopButton";
 
 function ContactUsPage(props) {
   return (
@@ -14,6 +15,7 @@ function ContactUsPage(props) {
     >
       <ContactUs />
       <Copyright />
+      <BackToTopButton />
     </motion.div>
   );
 }

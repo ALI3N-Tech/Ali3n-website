@@ -164,6 +164,7 @@
     justify-content: space-between;
     gap: 30px;
     overflow-x: scroll;
+    scroll-behavior: smooth;
     height: 700px;
     /* width: 90%; */
     margin: 0 auto;

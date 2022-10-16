@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Events from "../Events";
 import Copyright from "../Copyright";
+import BackToTopButton from "../BackToTopButton";
 
 function EventsPage(props) {
   return (
@@ -14,6 +15,7 @@ function EventsPage(props) {
     >
       <Events />
       <Copyright />
+      <BackToTopButton />
     </motion.div>
   );
 }

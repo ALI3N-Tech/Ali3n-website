@@ -3,6 +3,7 @@ import AboutHeading from "../AboutHeading";
 import "./About.css";
 import { motion } from "framer-motion";
 import Copyright from "../Copyright";
+import BackToTopButton from "../BackToTopButton";
 
 function About(props) {
   return (
@@ -15,6 +16,7 @@ function About(props) {
     >
       <AboutHeading />
       <Copyright />
+      <BackToTopButton />
     </motion.div>
   );
 }
