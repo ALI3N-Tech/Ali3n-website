@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Academy from "../Academy";
 import Copyright from "../Copyright";
 import Footer from "../Footer";
